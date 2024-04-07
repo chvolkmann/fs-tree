@@ -10,7 +10,10 @@
     "clean": "rm -rf dist bin",
     "build:lib": "bun build --target=node --sourcemap=external --outdir=dist src/main.ts",
     "build:cli": "bun build --compile --outfile bin/tree src/main.ts",
-    "build": "bun run build:lib && bun run build:cli"
+    "build": "bun run build:lib && bun run build:cli",
+    "release:bump": "npm version patch",
+    "release:publish": "npm publish --access public",
+    "release": "bun run release:bump && bun run release:publish"
   },
   "devDependencies": {
     "@types/bun": "latest",

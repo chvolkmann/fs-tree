@@ -1,15 +1,37 @@
 # fs-tree
 
-To install dependencies:
+A utility for printing a directory tree, similar to the Unix [`tree` command](<https://en.wikipedia.org/wiki/Tree_(command)>).
+
+**Example**
 
 ```bash
-bun install
+❯ tree .
+/fs-tree/
+├── .gitignore
+├── README.md
+├── bin/
+├── bun.lockb
+├── dist/
+├── package.json
+├── src/
+└── tsconfig.json
 ```
-
-To run:
 
 ```bash
-bun run index.ts
+❯ tree . 2
+/fs-tree/
+├── .gitignore
+├── README.md
+├── bun.lockb
+├── package.json
+├── src/
+│   ├── constants.ts
+│   ├── fsnode.ts
+│   ├── index.ts
+│   ├── main.ts
+│   ├── styles.ts
+│   ├── tree.ts
+│   ├── tree_formatter.ts
+│   └── utils.ts
+└── tsconfig.json
 ```
-
-This project was created using `bun init` in bun v1.1.2. [Bun](https://bun.sh) is a fast all-in-one JavaScript runtime.
