@@ -1,6 +1,6 @@
 {
   "name": "@chvl/fs-tree",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Prints a file system tree similar to the Unix tree command",
   "author": "Christian Volkmann <info+npm@chvolkmann.de>",
   "license": "MIT",
